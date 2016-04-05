@@ -5,21 +5,18 @@
   <head>
     <title> CV Juan Ángel Aroca </title>
     <meta charset="utf-8" />
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand:700" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="css/cv.css"/>
+	<script src="js/cv.js"></script>
   </head>
 
   <body>
     <header>
-      
       <h1> Juan Ángel Aroca </h1>
-      <div id="foto">
-				<img src="foto.jpg" alt ="foto Juan Angel Aroca" style="width: 110px; height: 150px"/>
-			</div>
-      
-    
-    </header>
 
-    <nav>
+    </header>
+    <nav id="MenuL">
       <ul>
         <li> <a href="#formacion">Formacion </a></li>
         <li> <a href="#experiencia"> Experiencia </a></li>
@@ -31,23 +28,37 @@
         <li> <a href="#contacto"> Contacto </a></li>
       </ul>
     </nav>
+	
+	<nav id="MenuS">
+	<img src="./img/nav-icon.png" alt="menu movil" onclick="menu()"></img>
+	<ul id="MenuSlista">
+        <li> <a href="#formacion" onclick="menu()">Formacion </a></li>
+        <li> <a href="#experiencia" onclick="menu()"> Experiencia </a></li>
+        <li> <a href="#idiomas" onclick="menu()"> Idiomas </a></li>
+        <li> <a href="#cursos" onclick="menu()"> Cursos </a></li>
+        <li> <a href="#conocimientos" onclick="menu()"> Conocimientos </a></li>
+        <li> <a href="#competencias" onclick="menu()"> Competencias </a></li>
+        <li> <a href="#otros" onclick="menu()"> Otros </a></li>
+        <li> <a href="#contacto" onclick="menu()"> Contacto </a></li>
+      </ul>
+	</nav>
 
-
-    <section>
-      <h2 id="formacion">FORMACIÓN ACADÉMICA</h2>
-      <article>
+    <section id="formacion">
+      <h2>FORMACIÓN ACADÉMICA</h2>
+      <article class="fondoblue">
         <ul>
           <li>Ingeniero Superior Informático por la Universidad de Murcia</li>
           <li>Máster de profesorado por la Universidad Católica de Murcia</li>
           <li>Máster en Desarrollo de aplicaciones y servicios Web por la Universidad de Alicante</li>
+          <li>Especialista Universitario en Desarrollo de Aplicaciones Móviles por la Universidad de Murcia</li>
         </ul>
       </article>
     </section>
 
-    <section>
-      <h2 id="experiencia">EXPERIENCIA PROFESIONAL</h2>
-      <article>
-        <h4>Programador Senior. <a href="http://grupooesia.com/" target="_blank">Oesia</a> (Murcia). Desde <time>"Septiembre 2014</time></h4>
+    <section id="experiencia">
+      <h2 >EXPERIENCIA PROFESIONAL</h2>
+      <article class="bordeCoral">
+        <h3>Programador Senior. <a href="http://grupooesia.com/" target="_blank">Oesia</a> (Murcia). Desde <time>"Septiembre 2014</time></h3>
         <ul>
           <li>Programación de servicios web con C#</li>
           <li>Desarrollo de orquestaciones con Biztalk y HL7</li>
@@ -55,8 +66,8 @@
         </ul>
       </article>
 
-      <article>
-        <h4>Backend Developer.<a href="http://www.nanonino.com/" target="_blank"> Nanonino</a> (Alicante) <time>2014</time>.</h4>
+      <article class="bordeBlue">
+        <h3>Backend Developer.<a href="http://www.nanonino.com/" target="_blank"> Nanonino</a> (Alicante) <time>2014</time>.</h3>
         <ul>
           <li>Programación con php y phalcon</li>
           <li>Diseño de bases de datos con mysql</li>
@@ -64,8 +75,8 @@
         </ul>
       </article>
 
-      <article>
-        <h4> Programador de autómatas e interfaces de Usuario.<a href="http://sgarsl.net/" target="_blank"> SGAR</a> (Barcelona) <time>2012</time>-<time>2013</time></h4>
+      <article class="bordeCoral">
+        <h3> Programador de autómatas e interfaces de Usuario.<a href="http://sgarsl.net/" target="_blank"> SGAR</a> (Barcelona) <time>2012</time>-<time>2013</time></h3>
         <ul>
           <li>Programacion de SCADA y HMI</li>
           <li>Desarrollo de aplicaciones con VBA</li>
@@ -75,8 +86,8 @@
         </ul>
       </article>
 
-      <article>
-        <h4>Programador de automatismos navales. <a href="https://www.navantia.es/" target="_blank"> Navantia</a>(Cartagena) <time>2009</time>-<time>2011</time></h4>
+      <article class="bordeBlue">
+        <h3>Programador de automatismos navales. <a href="https://www.navantia.es/" target="_blank"> Navantia</a>(Cartagena) <time>2009</time>-<time>2011</time></h3>
         <ul>
           <li>Diseño y programación de pantallas táctiles</li>
           <li>Programacion y puesta en marcha de autómatas</li>
@@ -84,8 +95,8 @@
         </ul>
       </article>
 
-      <article>
-        <h4>Programador informático. <a href="https://www.isotrol.com/web/" target="_blank">Isotrol</a> (Sevilla)<time>2008</time>-<time>2009</time></h4>
+       <article class="bordeCoral">
+        <h3>Programador informático. <a href="https://www.isotrol.com/web/" target="_blank">Isotrol</a> (Sevilla)<time>2008</time>-<time>2009</time></h3>
         <ul>
           <li>Programación en C de Sistemas Embebidos</li>
           <li>Protocolos de comunicaciones</li>
@@ -93,8 +104,8 @@
         </ul>
       </article>
 
-      <article>
-        <h4>Programador de automatismos industriales.<a href="http://electrohine.com/" target="_blank"> Electrohine.(Murcia)</a><time>2006</time>-<time>2008</time></h4>
+      <article class="bordeBlue">
+        <h3>Programador de automatismos industriales.<a href="http://electrohine.com/" target="_blank"> Electrohine.</a>(Murcia)<time>2006</time>-<time>2008</time></h3>
         <ul>
           <li> Diseño de interfaces de usuario</li>
           <li> Programación de automatas</li>
@@ -103,80 +114,110 @@
       </article>
     </section>
 
-    <section>
-      <h2 id="idiomas">IDIOMAS</h2>
+    <section id="idiomas">
+      <h2>IDIOMAS</h2>
       <article>
-        <ul>
-          <li>Inglés: Nivel Alto.</li>
-          <li>Título First Certificate por la Universidad de Cambridge</li>
-          <li>Cuarto curso de Inglés de la Escuela Oficial de Idiomas de Murcia</li>
-          <li>Curso de Inglés con estancia en el extranjero durante 3 semanas</li>
-          <li>Curso Intensivo de Inglés impartido por la Universidad Internacional Menendez Pelayo </li>
+       <table>
+         <tr><td><h3>Inglés: Nivel Alto.</h3></td></tr>
+         <tr><td>Título First Certificate por la Universidad de Cambridge</td></tr>
+         <tr><td>Cuarto curso de Inglés de la Escuela Oficial de Idiomas de Murcia</td></tr>
+         <tr><td>Curso de Inglés con estancia en el extranjero durante 3 semanas</td></tr>
+         <tr><td>Curso Intensivo de Inglés impartido por la Universidad Internacional Menendez Pelayo</td></tr>
 
-        </ul>
+
+       </table>
       </article>
     </section>
 
-    <section>
-      <h2 id="cursos">CURSOS</h2>
+    <section id="cursos">
+      <h2>CURSOS</h2>
       <article>
-        <ul>
-          <li> Introduccion a Macromedia Flash</li>
-          <li>Nuevas Tecnicas de Desarrollo Web con DreamWeaver y CSS</li>
-          <li>Programacion con PHP y Javascript</li>
-          <li>Introducción a Python</li>
-          <li>Instalacion de automatismos en edificios</li>
-          <li>Inteligencia emocional aplicada al trabajo</li>
-          <li>Prenvencion y control de la violencia en centros educativos</li>
-          <li>Nuevas tecnologias aplicadas a la educación</li>
-          <li>Uso integrado de las TIC's en centros educativos </li>
-        </ul>
+        <table>
+         <tr><td>Introducción a Python</td></tr>
+         <tr><td>Introduccion a Macromedia Flash</td></tr>
+         <tr><td>Programacion con PHP y Javascript</td></tr>
+         <tr><td>Instalacion de automatismos en edificios</td></tr>
+         <tr><td>Inteligencia emocional aplicada al trabajo</td></tr>
+         <tr><td>Nuevas tecnologias aplicadas a la educación</td></tr>
+         <tr><td>Uso integrado de las TIC's en centros educativos </td></tr>
+         <tr><td>Prenvencion y control de la violencia en centros educativos</td></tr>
+         <tr><td>Nuevas Técnicas de Desarrollo Web con DreamWeaver y CSS</td></tr>
+
+        </table>
       </article>
     </section>
     <section>
       <h2 id="conocimientos">OTROS CONOCIMIENTOS</h2>
-      <article>
-        <ul>
-          <li>Patrones MVC, MVP y MVVM</li>
-          <li>MSTest, SpecFlow,Jmeter,Selenium</li>
-          <li>Ingenieria de requisitos con i*</li>
-          <li>HTML5, CSS3</li>
-          <li>Jquery,Bootstrap,AngularJS,NodeJS</li>
-          <li>Metodologias Agiles</li>
-          <li>ASP.NET</li>
-          <li>XML,DTD,XML Schema,XSLT</li>
-          <li>XPath,XQuery</li>
-          <li>Enterprise Library,Nhibernate,EntityFrameWork</li>
-          <li>DWR,GRAILS</li>
-          <li>WPF y Expression Blend</li>
-          <li>Python</li>
-          <li>SQL Server,SQL Developer</li>
-          <li>WCF, REST,JSON, certificados X.509</li>
-          <li>Apache, IIS, Tomcat</li>
-          <li>Estandar HL7, Biztalk</li>
-        </ul>
+      <article class="fondocoral">
+    <table>
+      <tr>
+        <td class="giro1">HTML5</td>
+        <td class="giro3">CSS3</td>
+        <td class="giro3">JAVASCRIPT</td>
+        <td class="giro4">JQUERY</td>
+        <td class="giro4">XML</td>
+      </tr>
+      <tr>
+        <td class="giro2">Bootstrap</td>
+        <td class="giro5">AngularJS</td>
+        <td class="giro5">NodeJS</td>
+        <td class="giro3">IIS</td>
+        <td class="giro4">Metodologias Ágiles</td>
+      </tr>
+      <tr>
+        <td class="giro3">Patrones</td>
+        <td class="giro4">MVC</td>
+        <td class="giro2">MVP</td>
+        <td class="giro1">MVVM</td>
+        <td class="giro3">requisitos i*</td>
+      </tr>
+      <tr>
+        <td class="giro4">MSTest</td>
+        <td class="giro1">Selenium</td>
+        <td class="giro2">SpecFlow</td>
+        <td class="giro5">Jmeter</td>
+        <td class="giro4">Tomcat</td>
+      </tr>
+      <tr>
+        <td class="giro1">C#</td>
+        <td class="giro2">PHP</td>
+        <td class="giro2">Python</td>
+        <td class="giro1">Java</td>
+        <td class="giro2">SQL Server</td>
+      </tr>
+      <tr>
+        <td class="giro1">HL7</td>
+        <td class="giro2">Biztalk</td>
+        <td class="giro5">Tomcat</td>
+        <td class="giro3">XPath</td>
+        <td class="giro4">DTD</td>
+      </tr>
+    </table>
+
+
+
       </article>
     </section>
-    
-    <section>
-      <h2 id="competencias"> COMPETENCIAS</h2>
+
+    <section id="competencias">
+      <h2> COMPETENCIAS</h2>
       <article>
-        <ul>
-          <li> Habilidades de Comunicacion</li>
-          <li>Dominio del lenguaje Verbal y No Verbal</li>
-          <li>Empatía y Asertividad</li>
-          <li>Resolución de Conflictos</li>
-          <li>Negociacion</li>
-          <li>Flexibilidad y Adaptacion</li>
-          <li>Capacidad de Analitica y Sintesis</li>
-          <li>Evaluacion y Deteccion de Necesidades</li>
-          <li>Creatividad e Imaginación</li>
-        </ul>
+
+          <p class="indent1">Negociacion</p>
+          <p class="indent2">Empatía y Asertividad</p>
+          <p class="indent3">Resolución de Conflictos</p>
+          <p class="indent4">Creatividad e Imaginación</p>
+          <p class="indent5">Flexibilidad y Adaptacion</p>
+          <p class="indent6">Habilidades de Comunicacion</p>
+          <p class="indent7">Capacidad de Analitica y Sintesis</p>
+          <p class="indent8">Evaluacion y Deteccion de Necesidades</p>
+          <p class="indent9">Dominio del lenguaje Verbal y No Verbal</p>
+
       </article>
     </section>
-    
-    <section>
-      <h2 id="otros"> OTROS DATOS </h2>
+
+    <section id="otros">
+      <h2 > OTROS DATOS </h2>
       <article>
         Desde 2014 socio fundador de la asociación <a href="www.edroboticgames.com">EdroboticGames </a>, encargado de desarrollar la web y el marketing de la asociación así como dar           talleres de robótica y programación a niños. En el siguiente video puedes ver nuestro trabajo.
       </article>
@@ -185,9 +226,10 @@
         <iframe width="560" height="315" src="https://www.youtube.com/embed/Y7kl3sEPJCw?autohide=0&autoplay=0&rel=0" frameborder="0" allowfullscreen></iframe>
       </div>
     </section>
-    
-    <section>
-      <h2 id="contacto">CONTACTO</h2>
+
+    <section id="contacto">
+      <h2>CONTACTO</h2>
+
       <form id="formulario" action="#" method="POST" enctype="multipart/form-data">
         <label for="name">Tu nombre:</label><br />
         <input id="name" class="input" name="name" type="text" value="" size="30" /><br />
@@ -195,14 +237,16 @@
         <input id="email" class="input" name="email" type="text" value=""  /><br />
         <label for="message">Tu mensaje:</label><br />
         <textarea id="message"  name="message" rows="7" cols="30"></textarea><br />
-        <input id="submit_button" type="submit" value="Enviar email" />
+        <input id="boton" type="submit" value="Enviar email" />
       </form>
       <div id="direccion">
-      	<a href="mailto:juanillo82@gmail.com">juan_angel_aroca@hotmail.com</a> <br />
-      	<a href="tel:665972670">tlfno: 665 972 670</a> 	<br />     
-      	<a href="https://www.linkedin.com/">
-				<img src="linkdin.png" alt= "logo linkdin" style="width: 50px; height: 50px"/></a>
-			</div>
-      </section>
+        <a href="mailto:juanillo82@gmail.com">correo : juan_angel_aroca@hotmail.com</a> <br />
+        <a href="tel:665972670">teléfono : 665 972 670</a>   <br />
+        <a href="https://www.linkedin.com/">
+        <img src="linkdin.png" alt= "logo linkdin" style="width: 50px; height: 50px"/></a>
+      </div>
+
+   </section>
+    <footer></footer>
   </body>
 </html>
